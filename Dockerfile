@@ -1,2 +1,2 @@
 FROM ethereum/client-go:alpine
-CMD ["console", "--mine", "--minerthreads=1", "--etherbase=0x0000000000000000000000000000000000000001"]
+CMD ["--mine", "--minerthreads=1", "--etherbase=0x0000000000000000000000000000000000000001", "--nodiscover", "--networkid=15", "--maxpeers=1", "--rpc", "--rpcaddr=0.0.0.0", "--rpccorsdomain='*'","--rpcvhosts='*'", "console"]
